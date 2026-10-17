@@ -1,0 +1,65 @@
+{
+  "titanic": {
+    "rows": 891,
+    "columns": 12,
+    "missing": {
+      "Age": 177,
+      "Cabin": 687,
+      "Embarked": 2
+    },
+    "survival_rate": 0.3838,
+    "split_sizes": {
+      "train": 534,
+      "val": 178,
+      "test": 179
+    },
+    "baseline_cv_accuracy": 0.6161,
+    "model_comparison": [
+      {
+        "model": "Logistic Regression",
+        "train_acc": 0.7959,
+        "val_acc": 0.809
+      },
+      {
+        "model": "KNN",
+        "train_acc": 0.839,
+        "val_acc": 0.8258
+      },
+      {
+        "model": "Decision Tree",
+        "train_acc": 0.9794,
+        "val_acc": 0.764
+      },
+      {
+        "model": "Random Forest",
+        "train_acc": 0.9794,
+        "val_acc": 0.7753
+      }
+    ],
+    "feature_importance": {
+      "Fare": 0.2631,
+      "Age": 0.2299,
+      "Sex": 0.2219,
+      "Pclass": 0.0854,
+      "Title": 0.0841,
+      "FamilySize": 0.079,
+      "Embarked_S": 0.0154,
+      "Embarked_C": 0.0114,
+      "Embarked_Q": 0.0097
+    },
+    "grid_best_params": {
+      "model__metric": "manhattan",
+      "model__n_neighbors": 7,
+      "model__weights": "uniform"
+    },
+    "grid_best_cv": 0.8071,
+    "random_best_params": {
+      "model__weights": "uniform",
+      "model__n_neighbors": 15,
+      "model__metric": "manhattan"
+    },
+    "random_best_cv": 0.8165,
+    "validation_accuracy_final": 0.8315,
+    "test_accuracy_final": 0.8492
+  }
+}
