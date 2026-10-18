@@ -1,5 +1,7 @@
 # 🚢 Titanic Survival Prediction: End-to-End ML Project
 
+Completed as part of the Qafzah Machine Learning Program.
+
 An end-to-end supervised classification project that predicts whether a Titanic passenger survived. It is built around a reusable, leakage-free scikit-learn **Pipeline** with custom transformers, a fair model comparison, hyperparameter tuning, and a single final evaluation on an untouched test set.
 
 ## 📌 Overview
